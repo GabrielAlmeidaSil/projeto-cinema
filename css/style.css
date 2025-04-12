@@ -1,10 +1,13 @@
 @charset "UTF-8";
 
 /* Fontes */
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cinzel+Decorative:wght@400;700;900&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cinzel+Decorative:wght@400;700;900&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Audiowide&family=Cinzel+Decorative:wght@400;700;900&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-    --title-h1:"Cinzel Decorative", serif;
+    /* --title-h1:"Cinzel Decorative", serif; */
+    --title-h1: "Audiowide", sans-serif;
     --sub-title: "Archivo Black", sans-serif;
     --font-p: "Open Sans", sans-serif;
     --font-menu: "Raleway", sans-serif;
@@ -132,8 +135,6 @@ header ul li a:hover::after {
     border-color: var(--bg-body);
 }
 
-/* chat */
-
 .btn-container-mobile {
     display: flex;
     flex-direction: column;
@@ -162,8 +163,6 @@ header ul li a:hover::after {
     color: var(--bg-body);
     border-color: var(--bg-body);
 }
-
-/* fim chat */
 
 /* menu mobile */
 
@@ -197,6 +196,10 @@ header ul li a:hover::after {
     gap: 20px;
     padding: 0;
     margin: 0;
+}
+
+.icon-mobile{
+    gap: 10px;
 }
 
 .mobile-menu-opened ul li a {
@@ -259,7 +262,7 @@ header ul li a:hover::after {
     background-size: cover;
     background-attachment: fixed;
     min-height: 92vh;
-    border-top: 1px solid var(--main-color);
+    /* border-top: 1px solid var(--main-color); */
     border-bottom: 1px solid var(--main-color);
     overflow: hidden;
 }
@@ -592,28 +595,27 @@ header ul li a:hover::after {
 /* combo */
 
 .container-food{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* duas colunas por linha */
+    gap: 30px; /* espaçamento entre os itens */
+    padding: 20px;
 }
 
 .combos{
     background: var(--bg-fanatic);
     color: var(--main-color);
     text-align: center;
-    align-items: center;
-    width: 500px;
+    width: 100%; /* para ocupar corretamente a grid */
     border-radius: 10px;
     padding: 20px;
-    
+    margin-bottom: 20px;
     box-shadow: 0px 6px 12px var(--hover-plan);
     cursor: pointer;
-    margin: 0px 30px 110px 30px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .combos:hover{
     transform: scale(1.05);
-    transition: 0.3s ease-in-out;
     box-shadow: 0px 6px 12px var(--hover-plan);
 }
 
@@ -732,13 +734,6 @@ header ul li a:hover::after {
 }
 
 
-
-
-
-
-
-
-
 /* Responsivity */
 
 /* home */
@@ -783,6 +778,12 @@ header ul li a:hover::after {
     }
 
     
+.main-container h2, 
+.container-all h2{
+    font-size: 2.4em;
+    padding: 30px 0px;
+    margin: 0px 18px;
+}
 }
 
 @media (max-width: 480px) {
@@ -846,11 +847,24 @@ header ul li a:hover::after {
 /* combos */
 
 @media (max-width: 768px) {
+    .container-food{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
     .combos {
       width: 100%;
       max-width: 350px;
     }
   }
+
+  @media (min-width: 1024px) {
+    .container-food {
+        grid-template-columns: repeat(3, 1fr); /* três colunas por linha em telas maiores */
+    }
+}
   
   /* Ajuste extra para dispositivos muito pequenos */
   @media (max-width: 480px) {
