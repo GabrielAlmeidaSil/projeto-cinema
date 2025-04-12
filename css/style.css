@@ -243,22 +243,7 @@ header ul li a:hover::after {
     z-index: 1001;
 }
 
-@media (max-width: 1075px){
-    header ul, .btn-container{
-        display: none;
-    }
 
-    .menu-mobile{
-        display: flex;
-        font-size: 2.2em;
-        color: var(--main-color);
-        cursor: pointer;
-    }
-
-    .mobile-menu-opened.active {
-        display: flex;
-    }
-}
 
 /* fim header */
 
@@ -291,7 +276,8 @@ header ul li a:hover::after {
 }
 
 .contain-home h2{
-    font-size: 3.2em;
+    /* font-size: 3.2em; */
+    font-size: 3rem;
     font-weight: normal;
     font-family: var(--sub-title);
 }
@@ -730,9 +716,9 @@ header ul li a:hover::after {
 .end{
     color: var(--main-color);
     text-align: center;
-    font-size: 1.1em;
+    font-size: 0.9em;
     background: var(--bg-fanatic);
-    padding: 20px 0px;
+    padding: 20px 6px;
     font-family: var(--font-p);
 }
 
@@ -807,8 +793,23 @@ header ul li a:hover::after {
     .card-movie {
         padding: 10px;
     }
+}
 
-    
+@media (max-width: 1075px){
+    header ul, .btn-container{
+        display: none;
+    }
+
+    .menu-mobile{
+        display: flex;
+        font-size: 2.2em;
+        color: var(--main-color);
+        cursor: pointer;
+    }
+
+    .mobile-menu-opened.active {
+        display: flex;
+    }
 }
 
 /* plans */
