@@ -894,6 +894,8 @@ header ul li a:hover::after {
     }
   }
 
+  
+
   /* footer */
   @media (max-width: 992px) {
     .container-footer {
