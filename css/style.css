@@ -187,6 +187,8 @@ header ul li a:hover::after {
     z-index: 1000;
     backdrop-filter: blur(8px);
     transition: transform 0.3s ease-in-out;
+
+    
 }
 
 .mobile-menu-opened ul {
@@ -197,6 +199,7 @@ header ul li a:hover::after {
     padding: 0;
     margin: 0;
 }
+
 
 .icon-mobile{
     gap: 10px;
@@ -506,7 +509,7 @@ header ul li a:hover::after {
     height: auto;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     border-radius: 20px;
-    margin: 10px 10px 10px 0px;
+    /* margin: 10px 10px 10px 0px; */
 }
 
 .plan-light{
@@ -551,6 +554,7 @@ header ul li a:hover::after {
     font-size: 3.2em;
     font-weight: bold;
     color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .bene-plan {
@@ -841,8 +845,21 @@ header ul li a:hover::after {
         margin: auto;
     }
 
-    
+    .price-plan {
+        font-size: 2.8em;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
 }
+
+@media screen and (max-width: 450px){
+    .plan-btn {
+        font-size: 1.2em;
+    }
+}
+
+
 
 /* combos */
 
