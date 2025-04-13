@@ -1,12 +1,10 @@
 @charset "UTF-8";
 
 /* Fontes */
-/* @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cinzel+Decorative:wght@400;700;900&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap'); */
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Audiowide&family=Cinzel+Decorative:wght@400;700;900&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-    /* --title-h1:"Cinzel Decorative", serif; */
     --title-h1: "Audiowide", sans-serif;
     --sub-title: "Archivo Black", sans-serif;
     --font-p: "Open Sans", sans-serif;
@@ -68,8 +66,8 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* Fica acima do conteúdo */
-    background-color: var(--bg-body); /* Evita que o fundo fique transparente */
+    z-index: 1000; 
+    background-color: var(--bg-body); 
     border-bottom: 1px solid var(--main-color);
 }
 
@@ -187,8 +185,6 @@ header ul li a:hover::after {
     z-index: 1000;
     backdrop-filter: blur(8px);
     transition: transform 0.3s ease-in-out;
-
-    
 }
 
 .mobile-menu-opened ul {
@@ -258,14 +254,12 @@ header ul li a:hover::after {
 .home{
     display: flex;
     width: 100%;
-    /* min-height: 100vh; */
     background: url(../img/bh-home-movie.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     min-height: 92vh;
-    /* border-top: 1px solid var(--main-color); */
     border-bottom: 1px solid var(--main-color);
     overflow: hidden;
 }
@@ -282,7 +276,6 @@ header ul li a:hover::after {
 }
 
 .contain-home h2{
-    /* font-size: 3.2em; */
     font-size: 3rem;
     font-weight: normal;
     font-family: var(--sub-title);
@@ -327,7 +320,6 @@ header ul li a:hover::after {
 .main-container {
     max-width: 1700px;
     margin: auto;
-    /* padding: 20px; */
     padding-top: 80px;
     
 }
@@ -404,13 +396,6 @@ header ul li a:hover::after {
 
 /* next movie */
 
-/* .container-all{
-    background: var(--bg-container-all);
-    margin-top: 200px;
-    border-top: 1px solid var(--main-color);
-    border-bottom: 1px solid var(--main-color);
-} */
-
 .container-all {
     background: var(--bg-container-all);
     margin-top: 200px;
@@ -441,8 +426,8 @@ header ul li a:hover::after {
 
 .card-next {
     padding-bottom: 50px;
-    max-width: 400px; /* Limita a largura dos cards */
-    margin: 0 auto;   /* Centraliza na coluna */
+    max-width: 400px; 
+    margin: 0 auto; 
     width: 80%;
 }
 
@@ -505,11 +490,9 @@ header ul li a:hover::after {
     color: var(--main-color);
     padding: 10px 25px;
     cursor: pointer;
-    /* height: 600px; */
     height: auto;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     border-radius: 20px;
-    /* margin: 10px 10px 10px 0px; */
 }
 
 .plan-light{
@@ -600,8 +583,8 @@ header ul li a:hover::after {
 
 .container-food{
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* duas colunas por linha */
-    gap: 30px; /* espaçamento entre os itens */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px;
     padding: 20px;
 }
 
@@ -609,7 +592,7 @@ header ul li a:hover::after {
     background: var(--bg-fanatic);
     color: var(--main-color);
     text-align: center;
-    width: 100%; /* para ocupar corretamente a grid */
+    width: 100%;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
@@ -715,8 +698,8 @@ header ul li a:hover::after {
     margin-top: 10px;
 }
 
-
 /* end footer */
+
 
 /* end */
 .end{
@@ -738,7 +721,22 @@ header ul li a:hover::after {
 }
 
 
+
 /* Responsivity */
+
+/* menu */
+@media (max-width: 768px) {
+    header ul,
+    .btn-container {
+      display: none;
+     
+    }
+  
+    .menu-mobile {
+      display: block;
+      
+    }
+  }
 
 /* home */
 @media (max-width: 768px) {
@@ -750,16 +748,16 @@ header ul li a:hover::after {
 
     .container-home {
         
-        width: 100%; /* Ocupa a largura total */
-        min-height: 65vh; /* Faz com que ele sempre ocupe toda a altura */
-        padding: 50px 20px; /* Ajusta o padding para telas menores */
-        border-radius: 0; /* Remove bordas arredondadas para cobrir tudo */
+        width: 100%; 
+        min-height: 65vh; 
+        padding: 50px 20px; 
+        border-radius: 0; 
     }
 
     .contain-home p {
         font-size: 1.2em;
         line-height: 1.4;
-        width: 100%; /* Agora ocupa o espaço disponível */
+        width: 100%; 
     }
 
     .btn-home {
@@ -810,10 +808,12 @@ header ul li a:hover::after {
         font-size: 2.2em;
         color: var(--main-color);
         cursor: pointer;
+   
     }
 
     .mobile-menu-opened.active {
         display: flex;
+        z-index: 99;
     }
 }
 
@@ -879,11 +879,11 @@ header ul li a:hover::after {
 
   @media (min-width: 1024px) {
     .container-food {
-        grid-template-columns: repeat(3, 1fr); /* três colunas por linha em telas maiores */
+        grid-template-columns: repeat(3, 1fr); 
     }
 }
   
-  /* Ajuste extra para dispositivos muito pequenos */
+  /* dispositivos muito pequenos */
   @media (max-width: 480px) {
     .container-food {
       justify-content: center;
