@@ -60,7 +60,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 30px;
+    /* padding: 18px 30px; */
+    padding: 15px 12px;
 
     position: fixed;
     top: 0;
@@ -168,7 +169,6 @@ header ul li a:hover::after {
     display: none;
 }
 
-/* chat */
 .menu-icon {
     position: absolute;
     top: 30%;
@@ -196,7 +196,6 @@ header ul li a:hover::after {
     opacity: 1;
     transform: rotate(0deg);
   }
-/* chat */
 
 .mobile-menu-opened {
     display: none;
@@ -309,6 +308,8 @@ header ul li a:hover::after {
     font-size: 3rem;
     font-weight: normal;
     font-family: var(--sub-title);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    
 }
 
 .contain-home p{
@@ -785,7 +786,7 @@ header ul li a:hover::after {
     }
 
     .contain-home p {
-        font-size: 1em; /* 1.2 em */
+        font-size: 1.2em;
         line-height: 1.4;
         width: 100%; 
     }
