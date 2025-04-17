@@ -168,6 +168,36 @@ header ul li a:hover::after {
     display: none;
 }
 
+/* chat */
+.menu-icon {
+    position: absolute;
+    top: 30%;
+    left: 87%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .open-icon {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  
+  .close-icon {
+    opacity: 0;
+    transform: rotate(-90deg);
+  }
+
+  .menu-opened .open-icon {
+    opacity: 0;
+    transform: rotate(90deg);
+  }
+  
+  .menu-opened .close-icon {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+/* chat */
+
 .mobile-menu-opened {
     display: none;
     flex-direction: column;
@@ -755,7 +785,7 @@ header ul li a:hover::after {
     }
 
     .contain-home p {
-        font-size: 1.2em;
+        font-size: 1em; /* 1.2 em */
         line-height: 1.4;
         width: 100%; 
     }
