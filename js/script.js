@@ -5,9 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   menuIcon.addEventListener('click', () => {
     mobileMenu.classList.toggle('active');
-    menuIcon.classList.toggle('menu-opened'); // <- isso aciona a animação
-
-    // Remove "bi-list" e "bi-x" desnecessários (agora é feito com CSS)
+    menuIcon.classList.toggle('menu-opened');
   });
 
   mobileLinks.forEach(link => {
@@ -21,3 +19,38 @@ document.addEventListener('DOMContentLoaded', function () {
 const menuBtn = document.getElementById('menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
 const header = document.querySelector('header');
+
+/* transition MAIN-CREATE*/
+
+    const linksComTransicao = document.querySelectorAll('a.button-header');
+
+    linksComTransicao.forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault(); 
+            const destino = this.getAttribute('href');
+            const transition = document.getElementById('transition-screen');
+            transition.classList.add('active');
+
+            setTimeout(() => {
+                window.location.href = destino;
+            }, 500); // mesma duração da transição
+        });
+    });
+
+/* TRANSITION CREATE-MAIN*/
+const backBtn = document.querySelector('.back-header');
+
+    if (backBtn) {
+        backBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            const destino = this.getAttribute('href');
+            const transition = document.getElementById('transition-screen');
+            transition.classList.add('active');
+
+            setTimeout(() => {
+                window.location.href = destino;
+            }, 500);
+        });
+    }
+
+

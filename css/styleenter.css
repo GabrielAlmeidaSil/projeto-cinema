@@ -63,46 +63,24 @@ body{
 }
 
 /* HEADER */
-/* .header-container{
-    display: flex;
-    align-items: center;
-    padding: 18px 30px;
-    border-bottom: 1px solid var(--main-color);
-    position: relative;
-    z-index: 2;
-} */
 
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* muda aqui! */
+    justify-content: space-between;
     padding: 18px 30px;
     border-bottom: 1px solid var(--main-color);
     position: relative;
 }
-
-/* .back-header{
-    color: var(--main-color);
-    font-size: 1.5rem;
-} */
 
 .back-header {
     color: var(--main-color);
     font-size: 1.5rem;
     text-decoration: none;
-    margin-right: auto; /* garante que fique à esquerda */
+    margin-right: auto; 
     z-index: 2;
     align-items: center;
 }
-
-/* .title-header{
-    display: flex;
-    margin: auto;
-    text-align: center;
-    font-family: var(--title-h1);
-    color: var(--bg-button);
-    font-size: 2.5rem;
-} */
 
 .title-header {
     font-family: var(--title-h1);
@@ -114,14 +92,36 @@ body{
 
 /* END HEADER */
 
+/* TRANSITION */
+
+#transition-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000; 
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+
+#transition-screen.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* END TRANSITION */
+
 /* MAIN */
 
 main{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 20px; /* adiciona espaço interno */
-    flex-wrap: wrap; /* garante que os elementos se organizem em telas menores */
+    padding: 40px 20px;
+    flex-wrap: wrap;
 }
 
 .container-main {
@@ -139,11 +139,6 @@ main{
     align-items: center;
     justify-content: center;
 }
-
-/* .container-left{
-    position: relative;
-    z-index: 1;
-} */
 
 .container-left {
     display: flex;
@@ -167,15 +162,9 @@ main{
     text-shadow: 0 0 4px rgba(255,255,255,0.2);
 }
 
-
-/* .img-left{
-    max-width: 100%;
-    height: auto;
-    display: block;
-} */
-
 .img-left {
-    width: 100%;
+    /* width: 100%; */
+    width: 83%;
     height: auto;
     max-height: 680px;
     object-fit: contain;
@@ -332,7 +321,7 @@ main{
     }
 
     .title-header {
-        font-size: 2rem;
+        font-size: 2.5em;
     }
 
     .img-left {
@@ -343,7 +332,7 @@ main{
 
 @media (max-width: 1024px) {
     .title-header {
-        font-size: 2rem;
+        font-size: 2.5em;
     }
 
     .card-create h2 {
@@ -364,7 +353,7 @@ main{
 
     .title-header {
         margin: 0;
-        font-size: 2rem;
+        font-size: 2.5em;
         text-align: center;
     }
 
@@ -398,7 +387,7 @@ main{
 
 @media (max-width: 480px) {
     .title-header {
-        font-size: 1.7rem;
+        font-size: 2.5em;
     }
 
     .card-create h2 {
