@@ -41,6 +41,19 @@
     scrollbar-color: var(--color-subtitle) transparent;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* faz com que o main ocupe o espaço restante entre header e footer */
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -50,25 +63,53 @@ body{
 }
 
 /* HEADER */
-.header-container{
+/* .header-container{
     display: flex;
     align-items: center;
     padding: 18px 30px;
     border-bottom: 1px solid var(--main-color);
+    position: relative;
+    z-index: 2;
+} */
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* muda aqui! */
+    padding: 18px 30px;
+    border-bottom: 1px solid var(--main-color);
+    position: relative;
 }
 
-.back-header{
+/* .back-header{
     color: var(--main-color);
     font-size: 1.5rem;
+} */
+
+.back-header {
+    color: var(--main-color);
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin-right: auto; /* garante que fique à esquerda */
+    z-index: 2;
+    align-items: center;
 }
 
-.title-header{
+/* .title-header{
     display: flex;
     margin: auto;
     text-align: center;
     font-family: var(--title-h1);
     color: var(--bg-button);
     font-size: 2.5rem;
+} */
+
+.title-header {
+    font-family: var(--title-h1);
+    color: var(--bg-button);
+    font-size: 2.5rem;
+    text-align: center;
+    flex: 1;
 }
 
 /* END HEADER */
@@ -76,10 +117,11 @@ body{
 /* MAIN */
 
 main{
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 40px 20px; /* adiciona espaço interno */
+    flex-wrap: wrap; /* garante que os elementos se organizem em telas menores */
 }
 
 .container-main {
@@ -98,6 +140,20 @@ main{
     justify-content: center;
 }
 
+/* .container-left{
+    position: relative;
+    z-index: 1;
+} */
+
+.container-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
 
 .container-left p{
     color: var(--main-color);
@@ -112,11 +168,19 @@ main{
 }
 
 
-.img-left{
+/* .img-left{
+    max-width: 100%;
+    height: auto;
+    display: block;
+} */
+
+.img-left {
     width: 100%;
     height: auto;
-    max-height: 500px;
+    max-height: 680px;
     object-fit: contain;
+    display: block;
+    margin: 0 auto;
 }
 
 
@@ -255,6 +319,110 @@ main{
 
 
 /* RESPONSIVITY */
+
+@media (max-width: 768px) {
+    .container-main {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .container-left, .container-right {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .title-header {
+        font-size: 2rem;
+    }
+
+    .img-left {
+        max-height: 300px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .title-header {
+        font-size: 2rem;
+    }
+
+    .card-create h2 {
+        font-size: 1.8rem;
+    }
+
+    .card-create input {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .title-header {
+        margin: 0;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .container-main {
+        flex-direction: column;
+        padding: 20px;
+        gap: 3rem;
+    }
+
+    .container-left,
+    .container-right {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .img-left {
+        max-height: 300px;
+    }
+
+    .card-create {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    .button-create {
+        width: 100%;
+        padding: 14px 20px;
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-header {
+        font-size: 1.7rem;
+    }
+
+    .card-create h2 {
+        font-size: 1.5rem;
+    }
+
+    .container-left p {
+        font-size: 1.1rem;
+        padding: 0 10px;
+    }
+
+    .card-create label {
+        font-size: 1rem;
+    }
+
+    .card-create input {
+        font-size: 0.9rem;
+    }
+
+    .button-create {
+        font-size: 1.2em;
+        letter-spacing: 1px;
+    }
+}
 
 
 
