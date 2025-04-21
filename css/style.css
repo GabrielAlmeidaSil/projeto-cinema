@@ -113,7 +113,7 @@ header ul li a:hover::after {
     gap: 15px;
 }
 
-.btn-container button{
+.btn-container .button-header{
     background: transparent;
     border: 2px solid var(--main-color);
     font-weight: bold;
@@ -126,7 +126,7 @@ header ul li a:hover::after {
     transition: 0.3s ease-in-out;
 }
 
-.btn-container button:hover{
+.btn-container .button-header:hover{
     background: var(--main-color);
     color: var(--bg-body);
     border-color: var(--bg-body);
@@ -141,7 +141,7 @@ header ul li a:hover::after {
 }
 
 
-.btn-container-mobile button {
+.btn-container-mobile .button-header {
     background: transparent;
     border: 2px solid var(--main-color);
     font-weight: bold;
@@ -154,7 +154,7 @@ header ul li a:hover::after {
     transition: 0.3s ease-in-out;
 }
 
-.btn-container-mobile button:hover {
+.button-header:hover {
     background: var(--main-color);
     color: var(--bg-body);
     border-color: var(--bg-body);
@@ -243,7 +243,7 @@ header ul li a:hover::after {
 
 
 
-.btn-container-mobile button {
+.btn-container-mobile .button-header {
     width: 100%;
     padding: 12px 0;
     font-size: 1rem;
@@ -257,7 +257,7 @@ header ul li a:hover::after {
     transition: all 0.3s ease;
 }
 
-.btn-container-mobile button:hover {
+.btn-container-mobile .button-header:hover {
     background: var(--main-color);
     color: var(--bg-body);
     border-color: var(--bg-body);
