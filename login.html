@@ -42,12 +42,15 @@
                     <h2>Hora do show: faça login</h2>
 
 
-                    <form>
-                        <label>E-mail </label>
-                        <input type="email" placeholder="E-mail">
-                        <label>Senha: </label>
-                        <input type="password" placeholder="Senha">
+                    <form action="#" method="POST">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="E-mail para contato" required>
+                    
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" minlength="6" required>
+
                         <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                    
                         <button type="submit" class="button-create">Entrar</button>
                     </form>
 
