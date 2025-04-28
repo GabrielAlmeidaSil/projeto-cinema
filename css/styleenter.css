@@ -18,8 +18,8 @@
     --bg-body: #1C1C1C;
     --main-color: #F8F8F8;
     --color-subtitle: #B0B0B0;
-    --bg-button: #A52A2A; 
-    --hover-plan-btn: #8B0000;
+    --bg-button: #8B0000; 
+    --hover-plan-btn: #A52A2A;
     --color-scroll: #070707;
     --bg-card-movie: #686868;
     --hover-card: #5A1919;
@@ -53,7 +53,7 @@ html, body {
 }
 
 main {
-    flex: 1; /* faz com que o main ocupe o espaço restante entre header e footer */
+    flex: 1; 
 }
 
 html{
@@ -208,6 +208,7 @@ main{
     margin-bottom: 20px;
     border-radius: 8px;
     border: 1px solid var(--color-scroll);
+    width: 100%;
 }
 
 .card-create input::placeholder {
@@ -222,6 +223,7 @@ main{
 
 .button-create{
     margin: auto;
+    display: block;
     background: var(--bg-button);
     color: var(--main-color);
     outline: none;
@@ -309,11 +311,13 @@ main{
 
 /* LOGIN */
 
-.forgot-password{
-    padding-bottom: 20px;
+.forgot-password {
+    display: block;
+    margin-bottom: 20px;
     font-family: var(--font-p);
     color: var(--main-color);
 }
+
 
 .forgot-password:hover{
     color: var(--color-subtitle);
@@ -407,10 +411,12 @@ main{
     }
 
     .button-create {
-        width: 100%;
+        width: 70%;
         padding: 14px 20px;
         font-size: 1.3em;
     }
+
+
 }
 
 @media (max-width: 480px) {

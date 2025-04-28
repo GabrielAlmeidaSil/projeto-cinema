@@ -20,7 +20,7 @@ const menuBtn = document.getElementById('menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
 const header = document.querySelector('header');
 
-/* transition MAIN-CREATE*/
+
 
     const linksComTransicao = document.querySelectorAll('a.button-header');
 
@@ -33,11 +33,11 @@ const header = document.querySelector('header');
 
             setTimeout(() => {
                 window.location.href = destino;
-            }, 500); // mesma duração da transição
+            }, 500); 
         });
     });
 
-/* TRANSITION CREATE-MAIN*/
+
 const backBtn = document.querySelector('.back-header');
 
     if (backBtn) {
@@ -52,5 +52,13 @@ const backBtn = document.querySelector('.back-header');
             }, 500);
         });
     }
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const transition = document.getElementById('transition-screen');
+  if (transition) {
+      transition.classList.remove('active');
+  }
+});
 
 

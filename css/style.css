@@ -283,7 +283,7 @@ header ul li a:hover::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #000; /* Ou qualquer fundo temático do seu site */
+    background: #000; 
     z-index: 9999;
     opacity: 0;
     pointer-events: none;
