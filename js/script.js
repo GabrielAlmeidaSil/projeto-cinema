@@ -22,7 +22,7 @@ const header = document.querySelector('header');
 
 
 
-    const linksComTransicao = document.querySelectorAll('a.button-header');
+/*     const linksComTransicao = document.querySelectorAll('a.button-header');
 
     linksComTransicao.forEach(link => {
         link.addEventListener('click', function (e) {
@@ -59,6 +59,6 @@ document.addEventListener('DOMContentLoaded', function () {
   if (transition) {
       transition.classList.remove('active');
   }
-});
+}); */
 
 

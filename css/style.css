@@ -72,7 +72,7 @@ header{
 
 header h1 a{
     font-family: var(--title-h1);
-    color: var(--bg-button);
+    color: var(--hover-plan-btn);
     font-size: 2.5rem;
     font-weight: normal;
 }
