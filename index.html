@@ -1,546 +1,323 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+    <title>Church</title>
+
+    <!-- Link CSS -->
     <link rel="stylesheet" href="css/style.css">
 
-    <meta name="keywords" content="Cinema, Filmes, Cartaz, Lançamento de Filme, Planos, Combos, Cinoplex"> <!-- Colocar palavras chaves do site pra os motores de buscar dar mais visibilidade para o site -->
+    <!-- Link BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 
-    <link rel="shortcut icon" href="img/favicon-movie.png" type="image/x-icon">
-
-    <!-- BootStrap -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-
-
-    <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <title>Cineverso</title>
+    <!-- Link Icons BootStrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
+
 <body>
+
+    <!-- CABEÇALHO -->
     <header>
-        <h1>
-            <a href="#inicio">Cinoplex</a>
-        </h1>
+        <nav class="navbar navbar-expand-lg align-items-center fixed-top header">
+            <div class="container">
+                <!-- Logo -->
 
-        <ul>
-            <li>
-                <a href="#inicio">Início</a>
-            </li>
+                <a href="#menu" class="navbar-brand logo-header link-light fs-1">
+                    <img src="img/logo-church.png" alt="" class="img-fluid img-header rounded">
+                    Church
+                </a>
 
-            <li>
-                <a href="#post">Em Cartaz</a>
-            </li>
+                <!-- Menu Mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <li>
-                <a href="#next">Lançamentos</a>
-            </li>
+                <!-- Menu Desktop -->
+                <div class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item fs-5">
+                            <a class="nav-link" href="#inicio">Início</a>
+                        </li>
 
-            <li>
-                <a href="#plans">Planos</a>
-            </li>
+                        <li class="nav-item fs-5">
+                            <a class="nav-link" href="#about">Sobre</a>
+                        </li>
 
-            <li>
-                <a href="#food">Combos</a>
-            </li>
-            
-        </ul>
+                        <li class="nav-item fs-5">
+                            <a class="nav-link" href="#">Agenda</a>
+                        </li>
 
-        <div class="btn-container">
-            <a href="create.html" class="button-header">Criar Conta</a>
-            <a href="login.html" class="button-header">Entrar</a>
-        </div>
+                        <li class="nav-item fs-5">
+                            <a class="nav-link" href="#loja">Loja</a>
+                        </li>
 
-        <div class="menu-mobile" id="menuIcon">
-            <i class="bi bi-list menu-icon open-icon"></i>
-            <i class="bi bi-x menu-icon close-icon"></i>
-        </div>
+                        <li class="nav-item fs-5">
+                            <a class="nav-link" href="#eventos">Eventos</a>
+                        </li>
+
+                        <li class="nav-item fs-5">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
+    <!-- FIM CABEÇALHO -->
 
-   
 
-    <!-- menu-mobile -->
+    <!-- MAIN -->
 
-    <nav class="mobile-menu-opened" id="mobileMenu">
-        <ul>
-            <li>
-                <a href="#inicio">
-                    <i class="bi bi-house-door icon-mobile"></i>
-                    Início
-                </a>
-            </li>
+    <main class="main d-flex align-items-center justify-content-center text-white text-center" id="inicio">
+        <div class="container">
 
-            <li>
-                <a href="#post">
-                    <i class="bi bi-film icon-mobile"></i>
-                    Em Cartaz
-                </a>
-            </li>
+            <p class="versiculo display-3">"E conhecerão a verdade, e a verdade os libertará."</p>
+            <p class="versiculo text-center fs-5"> — João 8:32</p>
 
-            <li>
-                <a href="#next">
-                    <i class="bi bi-fire icon-mobile"></i>
-                    Lançamentos
-                </a>
-            </li>
-
-            <li>
-                <a href="#plans">
-                    <i class="bi bi-currency-dollar icon-mobile"></i>
-                    Planos
-                </a>
-            </li>
-
-            <li>
-                <a href="#food">
-                    <i class="bi bi-cup-straw icon-mobile"></i>
-                    Combos
-                </a>
-            </li>
-        </ul>
-    
-        <div class="btn-container-mobile">
-            
-                <a href="create.html" class="button-header">
-                    <i class="bi bi-person-plus icon-mobile"></i>
-                    Criar Conta
-                </a>
-            
-
-            
-                <a href="login.html" class="button-header">
-                    <i class="bi bi-person icon-mobile"></i>
-                    Entrar
-                </a>
-        
         </div>
-    </nav>
+    </main>
 
-    <!-- fim menu-mobile -->
-
-    
+    <!-- FIM MAIN -->
 
 
+    <!-- ABOUT -->
 
-    <section class="home"  id="inicio">
-        <div class="container-home">
-            <div class="contain-home"  data-aos="zoom-in" data-aos-delay="200">
-                <h2>Bem-vindo ao Cinoplex</h2>
-                <p>No Cinoplex, você encontra tudo o que precisa para viver a verdadeira experiência do cinema! Acompanhe os filmes em cartaz, fique por dentro dos próximos lançamentos e descubra nossos planos e combos de comida perfeitos para completar a sua sessão. Aqui, o cinema vai além da tela! Prepare-se para mergulhar em histórias incríveis, aproveitar os melhores sabores e curtir cada momento como se fosse único.</p>
-                <a href="#post" class="btn-home">Ver Filmes em Cartaz</a>
-
-            </div>
-        </div>
-    </section>
-
-   <main class="main-container" id="post">
-    <h2>Em Cartaz</h2>
-        <section class="section-movie" data-aos="fade-down">
-            <div class="container-movie">
-                <div class="card-movie">
-
-                    <h3>Ted</h3>
-                    <img src="img/movie-poster/ted-poster.jpg" alt="Poster do Filme TED" class="card-img" draggable="false">
-                    <div class="info-movie">
-                        <div class="info-p">
-                            <p>Comédia - 106min</p>
-                        </div>
-
-                        <div class="info-age">
-                            <p>+16 </p>
-                        </div>
-                    </div>
-                </div>
+    <section id="about" class="about container mt-5">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-5">
+                <img src="img/img-about.jpg" alt="" class="img-fluid rounded img-about shadow d-block mx-auto">
             </div>
 
-            <div class="container-movie">
-                <div class="card-movie">
+            <div class="col-12 col-lg-7">
+                <div class="container-fluid">
+                    <h2 class="titulo fw-semibold  mt-4">Sobre Nós</h2>
 
-                    <h3>Matrix </h3>
-                    <img src="img/movie-poster/matrix-poster.webp" alt="Poster do Filme MATRIX" class="card-img" draggable="false">
-                    <div class="info-movie">
-                        <div class="info-p">
-                            <p>Ação - 136Min</p>
-                        </div>
+                    <p class="paragrafo-about me-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                        dolores deleniti cupiditate placeat repudiandae tenetur. Nihil sint in maxime laborum, itaque,
+                        esse expedita earum, mollitia unde quam dolore? Vitae rerum soluta assumenda accusantium facere
+                        pariatur, doloremque dolore ipsa ab ullam nemo quam reprehenderit veniam.
+                    </p>
+                    <p class="paragrafo-about me-2">
+                        Nesciunt quia animi
+                        aliquam sapiente saepe! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim
+                        asperiores velit fugiat odio necessitatibus accusantium, natus in sit tempore, nobis, hic itaque
+                        vel? Similique illum autem praesentium quas minus quaerat.
+                    </p>
 
-                        <div class="info-age">
-                            <p>+14 </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-movie">
-                <div class="card-movie">
-                    <h3>It - A coisa</h3>
-                    <img src="img/movie-poster/it-poster.jpg" alt="Poster do Filme IT A COISAS" class="card-img" draggable="false">
-                    <div class="info-movie">
-                        <div class="info-p">
-                            <p>Terror  - 135Min</p>
-                        </div>
-
-                        <div class="info-age">
-                            <p>+16</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-movie">
-                <div class="card-movie">
-                    <h3>Coringa </h3>
-                    <img src="img/movie-poster/joker1-poster.jpg" alt="Poster do Filme CORINGA 2019" class="card-img" draggable="false">
-                    <div class="info-movie">
-                        <div class="info-p">
-                            <p>Drama - 122Min</p>
-                        </div>
-
-                        <div class="info-age">
-                            <p>+16</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-movie">
-                <div class="card-movie">
-                    
-                    <h3>A Origem</h3>
-                    <img src="img/movie-poster/origem-poster.jpg" alt="Poster do Filme A ORIGEM" class="card-img" draggable="false">
-                    <div class="info-movie">
-                        <div class="info-p">
-                            <p>Ação - 148Min</p>
-                        </div>
-
-                        <div class="info-age">
-                            <p>+14</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-movie">
-                <div class="card-movie">
-                    <h3>Rocky</h3>
-                    <img src="img/movie-poster/rocky1-poster.webp" alt="Poster do Filme A ROCKY" class="card-img" draggable="false">
-                    <div class="info-movie">
-                        <div class="info-p">
-                            <p>Esporte - 119Min</p>
-                        </div>
-
-                        <div class="info-age">
-                            <p>+12</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>        
-   </main>
-
-   <!-- next movie -->
-   <div class="container-all" id="next">
-    <h2>Próximos Lançamentos</h2>
-
-    <section class="section-movie next-movie" data-aos="fade-down">
-        <div class="container-movie card-next">
-            <div class="card-movie">
-                <h3>Minecraft</h3>
-                <img src="img/upcoming-releases/mine-poster.webp" alt="Poster do Filme MINECRAFT" class="card-img" draggable="false">
-                <div class="info-movie">
-                    <div class="info-p">
-                        <p>Aventura - 120min</p>
-                    </div>
-                    <div class="info-age">
-                        <p>+10</p>
-                    </div>
-                </div>
-                <div class="estreia">
-                    📅 Estreia: 18/04/2025
-                </div>
-            </div>
-        </div>
-        <div class="container-movie card-next">
-            <div class="card-movie">
-                <h3>Barbie</h3>
-                <img src="img/upcoming-releases/barbie-poster.jpg" alt="Poster do Filme BARBIE" class="card-img" draggable="false">
-                <div class="info-movie">
-                    <div class="info-p">
-                        <p>Comédia - 114Min</p>
-                    </div>
-                    <div class="info-age">
-                        <p>+12</p>
-                    </div>
-                </div>
-                <div class="estreia">
-                    📅 Estreia: 07/05/2025
-                </div>
-            </div>
-        </div>
-        <div class="container-movie card-next">
-            <div class="card-movie">
-                <h3>Thor</h3>
-                <img src="img/upcoming-releases/thor-poster.jpg" alt="Poster do Filme THOR" class="card-img" draggable="false">
-                <div class="info-movie">
-                    <div class="info-p">
-                        <p>Ação - 130Min</p>
-                    </div>
-                    <div class="info-age">
-                        <p>+12</p>
-                    </div>
-                </div>
-                <div class="estreia">
-                    📅 Estreia: 22/05/2025
-                </div>
-            </div>
-        </div>
-
-        <!-- teste -->
-        <div class="container-movie card-next">
-            <div class="card-movie">
-                <h3>Titanic</h3>
-                <img src="img/upcoming-releases/titanic-poster.jpg" alt="Poster do Filme TITANIC" class="card-img" draggable="false">
-                <div class="info-movie">
-                    <div class="info-p">
-                        <p>Romance - 195Min</p>
-                    </div>
-                    <div class="info-age">
-                        <p>+12</p>
-                    </div>
-                </div>
-                <div class="estreia">
-                    📅 Estreia: 15/06/2025
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-
-
-    <!-- end next movie -->
-
-
-    <!-- plans -->
-
-    <section class="plans main-container" id="plans">
-        <h2>Planos</h2>
-        <div class="container-plans" data-aos="zoom-in" data-aos-delay="120">
-            <div class="post-plan plan-light">
-                <h3>Cine Light</h3>
-                <div class="info-plan">
-                    <p class="price-plan">R$29,90</p>
-                    <p>Por mês</p>
-                </div>
-                <div class="bene-plan">
-                    <p>✔ 2 ingressos com descontos por mês</p>
-                    <p>✔ Promoções exclusivas na bomboniere</p>
-                    <p>✔ Acúmulo de pontos para brindes</p>
-                    <p>✔ Prioridade em sessões especiais</p>
-                </div>
-                <div class="container-btn">
-                    <button class="plan-btn">Assinar Plano</button>
-                </div>
-            </div>
-    
-            <div class="post-plan plan-plus">
-                <h3>Cine Plus</h3>
-                <div class="info-plan">
-                    <p class="price-plan">R$49,90</p>
-                    <p>Por mês</p>
-                </div>
-                <div class="bene-plan">
-                    <p>✔ 4 ingressos com descontos por mês</p>
-                    <p>✔ 20% de desconto em combos de pipoca</p>
-                    <p>✔ Fila preferencial nos finais de semana</p>
-                    <p>✔ Acesso antecipado a pré-vendas</p>
-                </div>
-                <div class="container-btn">
-                    <button class="plan-btn">Assinar Plano</button>
-                </div>
-            </div>
-    
-            <div class="post-plan plan-fanatic">
-                <h3>Cine Fanático</h3>
-                <div class="info-plan">
-                    <p class="price-plan">R$79,90</p>
-                    <p>Por mês</p>
-                </div>
-                <div class="bene-plan">
-                    <p>✔ 8 ingressos com descontos por mês</p>
-                    <p>✔ 30% de desconto na bomboniere</p>
-                    <p>✔ Convites para pré-estreias exclusivas</p>
-                    <p>✔ Cashback em compras no cinema</p>
-                </div>
-                <div class="container-btn">
-                    <button class="plan-btn">Assinar Plano</button>
-                </div>
-            </div>
-    
-            <div class="post-plan plan-ilimited">
-                <h3>Cine Ilimitado</h3>
-                <div class="info-plan">
-                    <p class="price-plan">R$149,90</p>
-                    <p>Por mês</p>
-                </div>
-                <div class="bene-plan">
-                    <p>✔ Entrada livre para qualquer sessão 2D e 3D</p>
-                    <p>✔ 50% de desconto em nossos combos</p>
-                    <p>✔ Acesso VIP em eventos especiais</p>
-                    <p>✔ Brindes exclusivos de filmes</p>
-                </div>
-                <div class="container-btn">
-                    <button class="plan-btn">Assinar Plano</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-
-    <!-- end plans -->
-
-
-
-    <!-- food -->
-
-    <section class="container-all" id="food">
-        <h2>Combos</h2>
-
-        <div class="container-food" data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom"
-        data-aos-delay="400">
-            <div class="combos">
-                <h3>Pipoca</h3>
-                <img src="img/food/popcorn.jpg" alt="Imagem de uma pipoca" class="img-combo" draggable="false">
-                <div class="info-combo">
-                    <p>Pipoca crocante e quentinha, disponível nos tamanhos pequeno, médio e grande.</p>
-                    <p class="price-combo">R$ 19,90</p>
-                </div>
-            </div>
-
-
-            <div class="combos">
-                <h3>Hambúrguer</h3>
-                <img src="img/food/hamburguer.jpg" alt="Imagem de um Hambúrguer" class="img-combo" draggable="false">
-                <div class="info-combo">
-                    <p>Hambúrguer suculento com queijo derretido e molho especial no pão macio.</p>
-                    <p class="price-combo">R$ 24,90</p>
-                </div>
-            </div>
-
-
-            <div class="combos">
-                <h3>Cachorro-Quente</h3>
-                <img src="img/food/hot-dog.jpg" alt="Imagem de um Cachorro-Quente" class="img-combo" draggable="false">
-                <div class="info-combo">
-                    <p>Pão fofinho, salsicha especial e acompanhamentos para um lanche irresistível.</p>
-                    <p class="price-combo">R$ 22,90</p>
-                </div>
-            </div>
-
-
-            <div class="combos">
-                <h3>Milkshake </h3>
-                <img src="img/food/milkshakee.jpg" alt="Imagem de um Milkshake" class="img-combo" draggable="false">
-                <div class="info-combo">
-                    <p>Bebida cremosa e refrescante nos sabores chocolate, morango ou baunilha.</p>
-                    <p class="price-combo">R$ 18,90</p>
-                </div>
-            </div>
-
-
-            <div class="combos">
-                <h3>Nachos </h3>
-                <img src="img/food/nacho.jpg" alt="Imagem de um Nachos" class="img-combo" draggable="false">
-                <div class="info-combo">
-                    <p>Nachos crocantes acompanhados de queijo derretido e molho levemente picante.</p>
-                    <p class="price-combo">R$ 21,90</p>
-                </div>
-            </div>
-
-
-            <div class="combos">
-                <h3>Pizza </h3>
-                <img src="img/food/pizza.jpg" alt="Imagem de uma pizza" class="img-combo" draggable="false">
-                <div class="info-combo">
-                    <p>Fatias saborosas de pizza com queijo derretido e ingredientes selecionados.</p>
-                    <p class="price-combo">R$ 29,90</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- end food -->
+    <!-- FIM ABOUT -->
 
 
-    <!-- footer -->
+    <!-- LOJA -->
 
-    <!-- contato, horario, social, aviso -->
+    <section class="loja container-fluid mt-5 position-relative" id="loja">
+        <!-- Camada preta -->
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-50"></div>
 
-    <footer class="footer">
-        <div class="container-footer">
-            <div class="contato">
-                <h3 class="title-footer">Contatos</h3>
+        <!-- Conteúdo -->
+        <div class="container text-center py-5 position-relative z-1 d-flex flex-column justify-content-center align-items-center h-100">
+            <div class="info-loja">
+                <h2 class="titulo-loja fw-semibold">LOJA</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ullam!</p>
+            </div>
+            <div class="loja-btn mt-3">
+                <button class="btn-geral px-4 py-2 shadow fs-5">Visitar Loja</button>
+            </div>
+        </div>
+    </section>
 
-                <p>
-                    <i></i>
-                    Telefone: <a href="#">(xx) xxxxx-xxxx</a>
-                </p>
+    <!-- FIM LOJA -->
 
-                <p>
-                    <i></i>
-                    E-mail: <a href="mailto:contaocinema@movie.com">contaocinema@movie.com</a>
-                </p>
 
-                <p>
-                    <i></i>
-                    Endereço: <a href="#">Rua Exemplo, 123 - Cidade, Estado</a>
-                </p>
+    <!-- EVENTOS -->
+    <section class="container-fluid section-agenda" id="eventos">
+        <div class="container my-5 py-5">
+            <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+                <!-- titulo e linha -->
+                <div class="d-flex align-items-center flex-grow-1">
+                    <h2 class="titulo pt-5 me-3 mb-0 fw-semibold">Eventos</h2>
+                    <div class="flex-grow-1 border-bottom border-dark mt-5 d-none d-md-block"></div>
+                </div>
+
+                <!-- link -->
+                <a href="#agenda" class="text-decoration-none fw-semibold text-dark pt-5">
+                    Ver todos os eventos
+                    <i class="bi bi-arrow-right icone-evento fs-5"></i>
+                </a>
             </div>
 
-            <div class="horario">
-                <h3 class="title-footer">Horário de Funcionamento</h3>
-                <p>Segunda a Sexta: 10h - 23h</p>
-                <p>Sábado e Domingo: 12h - 00h</p>
+            <!-- EVENTO 1 -->
+            <div class="card-agenda mt-5 shadow">
+                <div class="row align-items-center text-center text-lg-start">
+                    <!-- DATA -->
+                    <div class="col-lg-2 col-12 text-center fs-4">23 <br> JAN</div>
+
+                    <!-- NOME -->
+                    <div class="col-lg-8 col-12 fs-5 m-md-0 fw-bold">
+                        <span class="nome-evento">Primeiros passos com Jesus | 2025</span> <br>
+                        <i class="bi bi-calendar icone-evento"></i>
+                        20:00 - 21:30
+                    </div>
+
+                    <!-- BOTAO -->
+                    <div class="col-lg-2 col-12">
+                        <button class="btn-geral mx-auto mt-3 mt-lg-0 p-2 fs-6 w-75 text-center fw-bold shadow">Ver
+                            evento</button>
+                    </div>
+
+                </div>
             </div>
 
-            <div class="social">
-                <h3 class="title-footer">Siga-nos</h3>
-                <i class="bi bi-instagram icon-social" ></i>
-                <i class="bi bi-facebook icon-social"></i>
-                <i class="bi bi-twitter icon-social"></i>
-                <i class="bi bi-tiktok icon-social"></i>
+            <!-- EVENTO 2 -->
+            <div class="card-agenda mt-5 shadow">
+                <div class="row align-items-center text-center text-lg-start">
+                    <!-- DATA -->
+                    <div class="col-lg-2 col-12 text-center fs-4">08 <br> JUL</div>
+
+                    <!-- NOME -->
+                    <div class="col-lg-8 col-12 fs-5 m-md-0 fw-bold">
+                        <span class="nome-evento">Encontro de Oração e Louvor | 2025</span> <br>
+                        <i class="bi bi-calendar icone-evento"></i>
+                        19:30 - 21:00
+                    </div>
+
+                    <!-- BOTAO -->
+                    <div class="col-lg-2 col-12">
+                        <button class="btn-geral mx-auto mt-3 mt-lg-0 p-2 fs-6 w-75 text-center fw-bold shadow">Ver
+                            evento</button>
+                    </div>
+
+                </div>
             </div>
 
-            <div class="politicy">
-                <h3 class="title-footer">Políticas</h3>
+            <!-- EVENTO 3 -->
+            <div class="card-agenda mt-5 shadow">
+                <div class="row align-items-center text-center text-lg-start">
+                    <!-- DATA -->
+                    <div class="col-lg-2 col-12 text-center fs-4">24 <br> AGO</div>
 
-                <a href="#">Políticas de Privacidade</a>
-                <a href="#">Termos de Uso</a>
-                <a href="#">Política de Reembolso</a>
+                    <!-- NOME -->
+                    <div class="col-lg-8 col-12 fs-5 m-md-0 fw-bold">
+                        <span class="nome-evento">Workshop: Descobrindo Seus Dons Espirituais | 2025</span> <br>
+                        <i class="bi bi-calendar icone-evento"></i>
+                        15:00 - 17:30
+                    </div>
+
+                    <!-- BOTAO -->
+                    <div class="col-lg-2 col-12">
+                        <button class="btn-geral mx-auto mt-3 my-lg-0 p-2 fs-6 w-75 text-center fw-bold shadow">Ver
+                            evento</button>
+                    </div>
+
+                </div>
             </div>
+        </div>
+    </section>
+
+    <!-- FIM EVENTOS -->
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer mt-5" id="contato">
+        <div class="container py-4">
+            <div class="row">
+
+                <!-- Contato -->
+                <div class="col-12 col-md-3 mt-4">
+                    <h3 class="fw-semibold">Contatos</h3>
+
+                    <div class="contato">
+                        <p>
+                            <i class="bi bi-geo-alt"></i> <span class="fw-bold">Endereço:</span>
+                            <a href="#">Rua Fictícia, 123 - Centro</a>
+                        </p>
+
+                        <p>
+                            <i class="bi bi-envelope"></i> <span class="fw-bold">Email:</span>
+                            <a href="#">emailficticio@church.com</a>
+                        </p>
+
+                        <p>
+                            <i class="bi bi-telephone"></i> <span class="fw-bold">Telefone:</span>
+                            <a href="#">1234-5678</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Redes Sociais -->
+                <div class="col-12 col-md-3 mt-4">
+                    <h3 class="fw-semibold">Redes Sociais</h3>
+                    <div class="redes-sociais d-flex gap-4 fs-5 pt-2">
+                            <a href="#" class="link-start">
+                                <i class="bi bi-whatsapp"></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="bi bi-twitter-x"></i>
+                            </a>
+                        </div>
+                </div>
+
+                <!-- Links Úteis -->
+                <div class="col-12 col-md-3 mt-4">
+                    <h3 class="fw-semibold">Links Úteis</h3>
+
+                    <div class="d-flex flex-column gap-2">
+                        <a href="#inicio">Inicio</a>
+                        <a href="#sobre">Sobre Nós</a>
+                        <a href="#agenda">Agenda Semanal</a>
+                        <a href="#loja">Nossa Loja</a>
+                        <a href="#eventos">Eventos</a>
+                    </div>
+                </div>
+
+                <!-- Horario cultos -->
+                <div class="col-12 col-md-3 mt-4">
+                    <h3 class="fw-semibold">Horário dos Cultos</h3>
+
+                    <div>
+                        <p><strong>Terça:</strong> 19:30 - 21:00</p>
+                        <p><strong>Quinta:</strong> 19:30 - 21:00</p>
+                        <p><strong>Domingo:</strong> 18:00 - 20:30</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">
+            &copy; 2025. Site desenvolvido para fins de prática HTML, CSS e Bootstrap. Desenvolvido por
+            <a href="https://github.com/GabrielAlmeidaSil" target="_blank"> <i class="bi bi-github"></i> Gabriel Almeida</a>
+        </p>
         </div>
     </footer>
 
-    <!-- end footer -->
-
-    <div class="end">
-        <p>
-            &copy; 2025. Site desenvolvido para fins de prática HTML e CSS. Desenvolvido por
-            <a href="https://github.com/GabrielAlmeidaSil" target="_blank"> <i class="bi bi-github"></i> Gabriel Almeida</a>
-        </p>
-    </div>
-
-    <div id="transition-screen"></div>
+    <!-- FIM FOOTER -->
 
 
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script>
-        AOS.init();
-      </script>
-
-    <script src="js/script.js"></script>
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous">
+        </script>
 </body>
+
 </html>
